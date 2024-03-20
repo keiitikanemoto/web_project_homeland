@@ -21,3 +21,9 @@
     font-family: 'Inter';
     font-weight: 800;
 }
+
+@font-face {
+    src: url(../vendor/fonts/Inter-SemiBold.woff2) format("woff2");
+    font-family: 'Inter';
+    font-weight: 600;
+}
