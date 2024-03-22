@@ -5,45 +5,54 @@
 @import url(../blocks/intro.css);
 @import url(../blocks/grid__images.css);
 
-.card {
+.cards {
     width: 987px;
     margin: 0 148px 92px 145px;
 }
 
-.card__ukraine {
+.cards__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    column-gap: 40px;
-    row-gap: 48px;
+    grid-template-areas: 
+    "title creator"
+    "image paragraph"
+    "button paragraph"
+    ". paragraph";
+    gap: 48px;
 }
 
-.card__image {
+.cards__image {
     max-width: 460px;
     max-height: 460px;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 0;
-    grid-column-start: 1;
-    grid-column-end:2;
-
+    grid-area: image;
+    align-self: flex-start;
+    
 }
 
-.card__title {
+
+.cards__title {
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 900;
     font-size: 72px;
     max-width: 460px;
     margin: 0;
-}
-
-.card__creator {
-    grid-column-start: 2;
-    grid-row-start: 1;
+    grid-area: title;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     align-self: flex-end;
 }
 
-.card__artist {
+.cards__creator {
+    align-self: flex-end;
+    grid-area: creator;
+}
+
+.cards__artist {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 12px;
     margin-top: 0;
@@ -52,32 +61,40 @@
 
 }
 
-.card__author {
+.cards__author {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 18px;
- 
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-.card__description {
+
+
+.cards__description {
     align-self: center;
+    grid-area: paragraph;
 }
 
 
-.card__description-paragraph {
+
+.cards__description-paragraph {
     width: 484px;
     font-family: 'Inter', Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
     margin: 0;
     margin-bottom: 25px;
-    line-height: 1.5;
+    line-height: 1.63;
+    
 }
 
-.card__description-paragraph:last-of-type {
-    margin-bottom:0;
+.cards__description-paragraph:last-child {
+    margin: 0;
 }
 
-.card__button {
+
+
+.cards__button {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -86,5 +103,5 @@
     padding: 13px 20px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 80px;  
 }
-
