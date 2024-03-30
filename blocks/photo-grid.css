@@ -1,4 +1,4 @@
-.grid__images {
+.photo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -6,6 +6,6 @@
     margin: 0 48px 92px;
 }
 
-.grid__images-item {
+.photo-grid__item {
     width: 100%; 
 }
