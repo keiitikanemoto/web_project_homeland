@@ -22,8 +22,13 @@
     padding: 0;
     grid-area: image;
     align-self: flex-start;
-    background-size: cover;
-    
+}
+
+.cards__image:last-of-type {
+    height: 455px;
+}
+
+.cards__image:last-of-type {
     
 }
 
@@ -65,7 +70,7 @@
 
 
 .cards__description {
-    align-self: center;
+    align-self: flex-start;
     grid-area: paragraph;
 }
 
