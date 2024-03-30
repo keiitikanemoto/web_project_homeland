@@ -28,11 +28,6 @@
     height: 455px;
 }
 
-.cards__image:last-of-type {
-    
-}
-
-
 .cards__title {
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 900;
