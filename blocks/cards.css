@@ -102,3 +102,7 @@
     border-radius: 5px;
     margin-bottom: 80px;  
 }
+
+.cards__button:hover {
+    background: #0063d2;
+}
