@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 48px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .main {
+      padding: 0 0 64px;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .main {
+      padding: 0 0 38px;
+    }
+  }
