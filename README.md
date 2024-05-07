@@ -2,4 +2,7 @@
 
 Projeto da Sprint 04 da escola TripleTen
 
-Será colocado o link do site em breve.
+Para acessar o site, clique no Link abaixo!
+
+https://keiitikanemoto.github.io/web_project_homeland/
+
