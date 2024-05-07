@@ -106,3 +106,115 @@
 .cards__button:hover {
     background: #0063d2;
 }
+
+@media screen and (max-width: 999px) {
+    .cards {
+        max-width: 999px;
+        width: 100%;
+        margin-left: 24px;
+    }
+
+    .cards__image {
+        max-width: 340px;
+    }
+
+    .cards__title {
+        font-size: 42px;
+        max-width: 340px;
+    }
+
+    .cards__description-paragraph {
+        font-size: 16px;
+    }
+
+    .cards__button {
+        max-width: 274px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        max-width: 733px;
+        width: 100%;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .cards__image {
+        max-width: 340px;
+    }
+
+    .cards__title {
+        font-size: 42px;
+        max-width: 340px;
+    }
+
+    .cards__description-paragraph {
+        font-size: 16px;
+    }
+
+    .cards__button {
+        max-width: 274px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cards {
+        max-width: 320px;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .cards__container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "creator"
+        "image"
+        "paragraph"
+        "paragraph"
+        "paragraph"
+        "button";
+    }
+
+    .cards__image {
+        max-width: 320px;
+    }
+
+    .cards__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+        padding-left: 16px;
+    }
+
+    .cards__creator {
+        margin-bottom: 30px;
+        max-width: 288px;
+    }
+
+    .cards__artist {
+        font-size: 12px;
+        padding-left: 16px;
+    }
+
+    .cards__author {
+        width: 290px;
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 16px;
+    }
+
+    .cards__description {
+        font-size: 16px;
+        padding-left: 16px;
+    }
+
+    .cards__button {
+        max-width: 288px;
+        width: 100%;
+        margin-left: 16px;
+    }
+}
+

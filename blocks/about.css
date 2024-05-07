@@ -72,3 +72,29 @@
     border-radius: 5px;
     margin-bottom: 80px;  
 }
+
+.about__button:hover {
+    background-color: #0063d2;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .about {
+      width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .about {
+      width: 320px;
+    }
+  
+    .about__title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+  
+    .about__paragraph {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
